@@ -9,63 +9,39 @@
 
 ## Sobre mim
 
-Sou desenvolvedor Full Stack com foco em Python, Django e APIs REST. Construo aplicações web de ponta a ponta, do modelo de dados e das regras de autorização à interface, aos testes e à automação de entrega.
+Sou desenvolvedor Full Stack com foco em **Python, Django e APIs REST**. Transformo requisitos de produto em aplicações web completas, conectando modelagem de dados, regras de autorização, interfaces responsivas, testes e entrega.
 
-Meu trabalho recente explora produtos automotivos, marketplaces, delivery e redes sociais. Procuro manter as decisões técnicas visíveis: configuração por ambiente, validação automatizada, documentação reproduzível e segurança no acesso aos dados.
+Meus projetos recentes incluem uma plataforma automotiva full stack, uma rede social com Django, um marketplace integrado a uma API Node.js e uma experiência de delivery. Em todos eles, procuro deixar decisões, limitações e formas de execução claras para quem avalia o código.
 
-## Especialidades
+## Stack principal
 
-- backend com Python, Django e Django REST Framework;
-- serviços com Node.js e Express;
-- APIs REST, autenticação e autorização;
-- PostgreSQL, modelagem relacional e migrations;
-- frontend com React, Next.js e TypeScript;
-- testes com Django TestCase, Pytest, Playwright e Testing Library;
-- Docker, GitHub Actions e deploy de aplicações web.
+- **Backend:** Python, Django, Django REST Framework, Node.js e Express
+- **Frontend:** React, Next.js, TypeScript, JavaScript, HTML e CSS
+- **Dados:** PostgreSQL, Supabase e modelagem relacional
+- **Qualidade e entrega:** Pytest, Django TestCase, Playwright, Docker e GitHub Actions
 
-## Tecnologias
+## Projetos selecionados
 
-<p>
-  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white">
-  <img alt="Django" src="https://img.shields.io/badge/Django-0C4B33?logo=django">
-  <img alt="Django REST Framework" src="https://img.shields.io/badge/DRF-A30000">
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933?logo=nodedotjs&logoColor=white">
-  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-4169E1?logo=postgresql&logoColor=white">
-  <img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white">
-  <img alt="React" src="https://img.shields.io/badge/React-20232A?logo=react">
-  <img alt="Next.js" src="https://img.shields.io/badge/Next.js-000000?logo=nextdotjs">
-  <img alt="Docker" src="https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white">
-  <img alt="GitHub Actions" src="https://img.shields.io/badge/GitHub_Actions-2088FF?logo=githubactions&logoColor=white">
-</p>
-
-## Projetos em destaque
-
-| Projeto | O que demonstra | Stack |
+| Projeto | Destaques | Stack |
 |---|---|---|
-| [Projeto Garagem](https://github.com/Gustavo-tec0110/ProjetoGaragem) | produto full stack, autenticação, RLS, busca e E2E | Next.js, TypeScript, Supabase, Playwright |
-| Classic Motors — [API](https://github.com/Gustavo-tec0110/Classicmotors--BACK) e [Web](https://github.com/Gustavo-tec0110/Classicmotors-FRONT) | marketplace automotivo dividido entre API e interface responsiva | Node.js, Express, PostgreSQL, JWT, JavaScript |
-| [eFood](https://github.com/Gustavo-tec0110/exercicio.3) | estado global, consumo de API e checkout | React, TypeScript, Redux Toolkit |
+| [Projeto Garagem](https://github.com/Gustavo-tec0110/ProjetoGaragem) | produto full stack, autenticação, RLS, busca e testes E2E | Next.js, TypeScript, Supabase, Playwright |
 | [Pulse](https://github.com/Gustavo-tec0110/pulse-social-network-django) | domínio social, interface server-rendered e API REST | Django, DRF, PostgreSQL, Docker |
+| Classic Motors — [API](https://github.com/Gustavo-tec0110/Classicmotors--BACK) e [Web](https://github.com/Gustavo-tec0110/Classicmotors-FRONT) | marketplace automotivo com autenticação, catálogo e administração | Node.js, Express, PostgreSQL, JavaScript |
+| [MesaLocal](https://github.com/Gustavo-tec0110/mesalocal) | consumo de API, estado global, carrinho e design responsivo | React, Redux Toolkit, Styled Components |
+| [Bookstore API](https://github.com/Gustavo-tec0110/bookstore-drf-ebac) | catálogo, pedidos, autenticação e CI com PostgreSQL | Django, DRF, PostgreSQL, Docker |
 
-## Princípios de trabalho
+## Como trabalho
 
-- prefiro código simples, testável e documentado;
-- trato segurança e autorização como parte da arquitetura;
-- uso automação para tornar qualidade repetível;
-- registro limitações e próximos passos sem apresentar protótipos como produtos finalizados.
+- código simples, testável e documentado;
+- segurança e autorização tratadas como parte da arquitetura;
+- automação para tornar qualidade e entrega reproduzíveis;
+- limitações registradas sem apresentar protótipos como produtos finalizados.
 
 ## Objetivo profissional
 
-Busco oportunidades como Desenvolvedor Full Stack Python, com espaço para atuar em backend Django, APIs, bancos relacionais e integração com interfaces modernas. Tenho interesse em equipes que valorizem revisão de código, testes, documentação e evolução contínua do produto.
+Busco oportunidades como **Desenvolvedor Full Stack Python**, com espaço para contribuir em backend Django, APIs, bancos relacionais e integração com interfaces modernas.
 
 ## Contato
 
-- GitHub: [@Gustavo-tec0110](https://github.com/Gustavo-tec0110)
 - E-mail: [gustavo.sl.0110@gmail.com](mailto:gustavo.sl.0110@gmail.com)
-
-<!--
-Antes de publicar:
-1. Adicione aqui o LinkedIn somente após confirmar a URL correta.
-2. Adicione o portfólio somente após existir uma URL pública estável.
-Nenhum link foi inventado durante a preparação deste README.
--->
+- GitHub: [@Gustavo-tec0110](https://github.com/Gustavo-tec0110)
