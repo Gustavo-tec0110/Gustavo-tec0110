@@ -27,7 +27,7 @@ Meus projetos recentes incluem uma plataforma automotiva full stack, uma rede so
 | [Projeto Garagem](https://github.com/Gustavo-tec0110/ProjetoGaragem) | produto full stack, autenticação, RLS, busca e testes E2E | Next.js, TypeScript, Supabase, Playwright |
 | [Pulse](https://github.com/Gustavo-tec0110/pulse-social-network-django) | domínio social, interface server-rendered e API REST | Django, DRF, PostgreSQL, Docker |
 | Classic Motors — [API](https://github.com/Gustavo-tec0110/Classicmotors--BACK) e [Web](https://github.com/Gustavo-tec0110/Classicmotors-FRONT) | marketplace automotivo com autenticação, catálogo e administração | Node.js, Express, PostgreSQL, JavaScript |
-| [MesaLocal](https://github.com/Gustavo-tec0110/mesalocal) | consumo de API, estado global, carrinho e design responsivo | React, Redux Toolkit, Styled Components |
+| MesaLocal — [Código](https://github.com/Gustavo-tec0110/mesalocal) e [Demo](https://mesa-local.netlify.app) | consumo de API, estado global, carrinho e design responsivo | React, Redux Toolkit, Styled Components |
 | [Bookstore API](https://github.com/Gustavo-tec0110/bookstore-drf-ebac) | catálogo, pedidos, autenticação e CI com PostgreSQL | Django, DRF, PostgreSQL, Docker |
 
 ## Como trabalho
