@@ -1,12 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
   <title id="title">Gustavo Lopes</title>
-  <desc id="desc">Desenvolvedor Full Stack Python</desc>
-  <defs><linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#08111f"/><stop offset=".55" stop-color="#0f2a44"/><stop offset="1" stop-color="#0f766e"/></linearGradient></defs>
-  <rect width="1200" height="360" rx="28" fill="url(#bg)"/>
-  <circle cx="1040" cy="72" r="210" fill="#2dd4bf" opacity=".11"/><circle cx="980" cy="340" r="260" fill="#38bdf8" opacity=".09"/>
-  <path d="M940 160l-52 40 52 40M1080 160l52 40-52 40M1036 130l-52 140" fill="none" stroke="#99f6e4" stroke-width="12" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
-  <text x="72" y="91" fill="#5eead4" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">SOFTWARE ENGINEERING · FULL STACK</text>
-  <text x="72" y="188" fill="#f8fafc" font-family="Arial, sans-serif" font-size="68" font-weight="800">Gustavo Lopes</text>
-  <text x="72" y="244" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="29">Desenvolvedor Full Stack Python</text>
-  <text x="72" y="306" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">Django · APIs REST · React · TypeScript · PostgreSQL</text>
+  <desc id="desc">Full Stack Developer focused on Python, Django, React, and TypeScript</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#090b18"/>
+      <stop offset="0.5" stop-color="#18133a"/>
+      <stop offset="1" stop-color="#111b45"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#a78bfa"/>
+      <stop offset="0.55" stop-color="#818cf8"/>
+      <stop offset="1" stop-color="#60a5fa"/>
+    </linearGradient>
+    <radialGradient id="glow">
+      <stop stop-color="#8b5cf6" stop-opacity="0.34"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="360" rx="28" fill="url(#background)"/>
+  <circle cx="1040" cy="56" r="260" fill="url(#glow)"/>
+  <circle cx="1110" cy="330" r="210" fill="#2563eb" opacity="0.08"/>
+  <path d="M70 70h286" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <g fill="none" stroke="url(#accent)" stroke-width="11" stroke-linecap="round" stroke-linejoin="round" opacity="0.72">
+    <path d="M945 152l-52 42 52 42"/>
+    <path d="M1075 152l52 42-52 42"/>
+    <path d="M1035 124l-50 140"/>
+  </g>
+  <text x="70" y="116" fill="#c4b5fd" font-family="Arial, sans-serif" font-size="20" font-weight="700" letter-spacing="4">FULL STACK DEVELOPER</text>
+  <text x="70" y="204" fill="#f8fafc" font-family="Arial, sans-serif" font-size="68" font-weight="800">Gustavo Lopes</text>
+  <text x="70" y="258" fill="#d1d5db" font-family="Arial, sans-serif" font-size="27">Python backends · Complete web applications</text>
+  <text x="70" y="309" fill="#94a3b8" font-family="Arial, sans-serif" font-size="18">Django · REST APIs · React · TypeScript · PostgreSQL</text>
 </svg>
