@@ -3,6 +3,8 @@
 </p>
 
 <p align="center">
+  <a href="[SEU_LINK_DO_LINKEDIN](https://www.linkedin.com/in/gustavo-silva-lopes-dev/)">
+  <img src="URL_DO_BADGE_LINKEDIN" alt="LinkedIn">
   <a href="mailto:gustavo.sl.0110@gmail.com"><img alt="Email Gustavo Lopes" src="https://img.shields.io/badge/Email-7c3aed?style=for-the-badge&logo=gmail&logoColor=white"></a>
   <a href="https://github.com/Gustavo-tec0110"><img alt="GitHub profile" src="https://img.shields.io/badge/GitHub-111827?style=for-the-badge&logo=github&logoColor=white"></a>
 </p>
