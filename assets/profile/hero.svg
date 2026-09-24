@@ -1,66 +1,116 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="600" viewBox="0 0 1600 600" role="img" aria-labelledby="title desc">
   <title id="title">Gustavo Lopes — Full Stack Developer</title>
-  <desc id="desc">An animated terminal-inspired banner for Gustavo Lopes, a Full Stack Developer who builds real-world web applications.</desc>
+  <desc id="desc">An animated, terminal-inspired developer workspace banner for Gustavo Lopes.</desc>
   <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#070a12"/>
-      <stop offset=".56" stop-color="#11182d"/>
-      <stop offset="1" stop-color="#241144"/>
+    <linearGradient id="hero-background" x1="0" y1="0" x2="1" y2=".8">
+      <stop stop-color="#090d14"/>
+      <stop offset=".52" stop-color="#0c1220"/>
+      <stop offset="1" stop-color="#181027"/>
     </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop stop-color="#38bdf8"/>
-      <stop offset=".48" stop-color="#818cf8"/>
+    <linearGradient id="name-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#f8fafc"/>
+      <stop offset=".56" stop-color="#e2e8f0"/>
       <stop offset="1" stop-color="#d8b4fe"/>
     </linearGradient>
-    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
-      <stop stop-color="#111a31" stop-opacity=".94"/>
-      <stop offset="1" stop-color="#160e2c" stop-opacity=".78"/>
+    <linearGradient id="line-gradient" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#38bdf8" stop-opacity=".08"/>
+      <stop offset=".55" stop-color="#818cf8" stop-opacity=".72"/>
+      <stop offset="1" stop-color="#c084fc" stop-opacity=".08"/>
     </linearGradient>
-    <radialGradient id="glow" cx="80%" cy="20%" r="72%">
-      <stop stop-color="#8b5cf6" stop-opacity=".34"/>
-      <stop offset=".56" stop-color="#38bdf8" stop-opacity=".08"/>
+    <linearGradient id="editor-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#111a2d" stop-opacity=".96"/>
+      <stop offset="1" stop-color="#0b101c" stop-opacity=".92"/>
+    </linearGradient>
+    <linearGradient id="explorer-fill" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#14182a" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#0b101b" stop-opacity=".78"/>
+    </linearGradient>
+    <radialGradient id="right-glow" cx="74%" cy="35%" r="62%">
+      <stop stop-color="#7c3aed" stop-opacity=".24"/>
+      <stop offset=".42" stop-color="#2563eb" stop-opacity=".10"/>
+      <stop offset="1" stop-color="#0d1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="orb-glow" cx="50%" cy="50%" r="50%">
+      <stop stop-color="#8b5cf6" stop-opacity=".20"/>
       <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
     </radialGradient>
-    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse">
-      <path d="M38 0H0V38" fill="none" stroke="#a78bfa" stroke-opacity=".11"/>
+    <pattern id="grid" width="44" height="44" patternUnits="userSpaceOnUse">
+      <path d="M44 0H0V44" fill="none" stroke="#94a3b8" stroke-opacity=".055"/>
     </pattern>
-    <filter id="soft-glow" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
+    <filter id="shadow" x="-30%" y="-30%" width="180%" height="190%">
+      <feDropShadow dx="0" dy="16" stdDeviation="14" flood-color="#020617" flood-opacity=".72"/>
+    </filter>
+    <filter id="subtle-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
       <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
     </filter>
-    <clipPath id="typed-command"><rect x="314" y="145" width="0" height="34"><animate attributeName="width" values="0;0;80;80" keyTimes="0;.2;.52;1" dur="4.8s" repeatCount="indefinite"/></rect></clipPath>
+    <clipPath id="typed-command">
+      <rect x="378" y="145" width="0" height="36"><animate attributeName="width" values="0;0;101;101" keyTimes="0;.13;.40;1" dur="5.6s" repeatCount="indefinite"/></rect>
+    </clipPath>
   </defs>
-  <rect width="1200" height="500" rx="24" fill="url(#background)"/>
-  <rect width="1200" height="500" rx="24" fill="url(#grid)"/>
-  <rect width="1200" height="500" rx="24" fill="url(#glow)"/>
-  <rect x="26" y="26" width="1148" height="448" rx="18" fill="#070a12" fill-opacity=".42" stroke="#94a3b8" stroke-opacity=".28"/>
-  <circle cx="74" cy="77" r="7" fill="#f87171"/>
-  <circle cx="99" cy="77" r="7" fill="#facc15"/>
-  <circle cx="124" cy="77" r="7" fill="#4ade80"/>
-  <path d="M70 113h270" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
-  <text x="70" y="169" fill="#86efac" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="21" font-weight="600">gustavo@github:~$</text>
-  <text x="314" y="169" fill="#d8b4fe" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="21" clip-path="url(#typed-command)">whoami</text>
-  <rect x="396" y="148" width="10" height="25" rx="1" fill="#d8b4fe"><animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;.45;.5;.95;1" dur="1.1s" repeatCount="indefinite"/></rect>
-  <g>
-    <text x="70" y="260" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="76" font-weight="800" letter-spacing="-2">Gustavo Lopes</text>
-    <text x="70" y="316" fill="#bfdbfe" font-family="Arial, Helvetica, sans-serif" font-size="33" font-weight="700">Full Stack Developer</text>
-    <text x="70" y="367" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="22">Building real-world web applications across the stack.</text>
+
+  <rect width="1600" height="600" rx="24" fill="url(#hero-background)"/>
+  <rect width="1600" height="600" rx="24" fill="url(#grid)"/>
+  <rect width="1600" height="600" rx="24" fill="url(#right-glow)"/>
+  <path d="M720 80C1020 38 1236 98 1560 188" fill="none" stroke="url(#line-gradient)" stroke-width="2"/>
+  <path d="M736 510C1030 438 1320 506 1570 412" fill="none" stroke="url(#line-gradient)" stroke-width="2"/>
+  <rect x="28" y="28" width="1544" height="544" rx="18" fill="#070b12" fill-opacity=".26" stroke="#64748b" stroke-opacity=".38" stroke-width="2"/>
+
+  <circle cx="76" cy="78" r="8" fill="#fb7185"/>
+  <circle cx="104" cy="78" r="8" fill="#fbbf24"/>
+  <circle cx="132" cy="78" r="8" fill="#4ade80"/>
+
+  <g aria-label="Terminal identity">
+    <text x="70" y="170" fill="#86efac" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="27" font-weight="600">gustavo@github:~$</text>
+    <text x="378" y="170" fill="#d8b4fe" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="27" clip-path="url(#typed-command)">whoami</text>
+    <rect x="378" y="148" width="12" height="29" rx="1" fill="#e9d5ff">
+      <animate attributeName="x" values="378;378;480;480" keyTimes="0;.13;.40;1" dur="5.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;1;.18;.18;1" keyTimes="0;.45;.5;.95;1" dur="1.15s" repeatCount="indefinite"/>
+    </rect>
   </g>
-  <g transform="translate(830 125)">
-    <rect width="290" height="238" rx="17" fill="url(#panel)" stroke="#a5b4fc" stroke-opacity=".42"/>
-    <rect x="22" y="24" width="246" height="34" rx="8" fill="#080d1b" stroke="#64748b" stroke-opacity=".36"/>
-    <circle cx="41" cy="41" r="5" fill="#38bdf8" filter="url(#soft-glow)"/>
-    <path d="M57 41h76" stroke="#818cf8" stroke-width="4" stroke-linecap="round"/>
-    <path d="M23 91h244M23 147h244M23 202h244" stroke="#64748b" stroke-opacity=".28"/>
-    <g fill="none" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" transform="translate(55 91)">
-      <path d="M42 0 0 42l42 42"/>
-      <path d="m143 0 42 42-42 42"/>
-      <path d="m111-18-31 120"/>
+
+  <g aria-label="Profile identity">
+    <text x="70" y="278" fill="url(#name-gradient)" font-family="Arial, Helvetica, sans-serif" font-size="94" font-weight="800" letter-spacing="-3">Gustavo Lopes</text>
+    <text x="70" y="344" fill="#dbeafe" font-family="Arial, Helvetica, sans-serif" font-size="43" font-weight="650" letter-spacing="-.5">Full Stack Developer</text>
+    <text x="70" y="414" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="29">Building real-world web applications</text>
+    <text x="70" y="453" fill="#cbd5e1" font-family="Arial, Helvetica, sans-serif" font-size="29">across the stack.</text>
+  </g>
+
+  <g aria-label="Development focus" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700">
+    <g transform="translate(70 490)"><rect width="152" height="50" rx="12" fill="#0b1518" fill-opacity=".84" stroke="#34d399" stroke-opacity=".54" stroke-width="2"/><circle cx="23" cy="25" r="7" fill="#4ade80" filter="url(#subtle-glow)"/><text x="43" y="31" fill="#d1fae5">Frontend</text></g>
+    <g transform="translate(238 490)"><rect width="144" height="50" rx="12" fill="#0b111c" fill-opacity=".84" stroke="#38bdf8" stroke-opacity=".54" stroke-width="2"/><circle cx="23" cy="25" r="7" fill="#38bdf8" filter="url(#subtle-glow)"/><text x="43" y="31" fill="#dbeafe">Backend</text></g>
+    <g transform="translate(398 490)"><rect width="158" height="50" rx="12" fill="#120f20" fill-opacity=".84" stroke="#a78bfa" stroke-opacity=".54" stroke-width="2"/><circle cx="23" cy="25" r="7" fill="#a78bfa" filter="url(#subtle-glow)"/><text x="43" y="31" fill="#ede9fe">Database</text></g>
+    <g transform="translate(572 490)"><rect width="104" height="50" rx="12" fill="#17130c" fill-opacity=".84" stroke="#fbbf24" stroke-opacity=".54" stroke-width="2"/><circle cx="23" cy="25" r="7" fill="#fbbf24" filter="url(#subtle-glow)"/><text x="43" y="31" fill="#fef3c7">APIs</text></g>
+    <g transform="translate(692 490)"><rect width="160" height="50" rx="12" fill="#190e1a" fill-opacity=".84" stroke="#fb7185" stroke-opacity=".54" stroke-width="2"/><circle cx="23" cy="25" r="7" fill="#fb7185" filter="url(#subtle-glow)"/><text x="43" y="31" fill="#ffe4e6">Deployment</text></g>
+  </g>
+
+  <g aria-label="Decorative developer workspace">
+    <circle cx="1436" cy="174" r="170" fill="url(#orb-glow)"/>
+    <path d="M1290 126c86-88 234-60 288 51 35 72 5 162-65 207" fill="none" stroke="#8b5cf6" stroke-opacity=".24" stroke-width="2"/>
+    <path d="M1308 151c72-61 189-45 237 46 25 48 13 108-25 146M1330 189c57-32 130-9 157 51" fill="none" stroke="#60a5fa" stroke-opacity=".19" stroke-width="2"/>
+    <g fill="#c4b5fd" fill-opacity=".48"><circle cx="1350" cy="124" r="3"/><circle cx="1430" cy="98" r="3"/><circle cx="1511" cy="156" r="3"/><circle cx="1478" cy="278" r="3"/><circle cx="1372" cy="258" r="3"/></g>
+
+    <g transform="translate(806 194) rotate(-5 135 132)" filter="url(#shadow)">
+      <rect width="282" height="264" rx="13" fill="url(#explorer-fill)" stroke="#8b5cf6" stroke-opacity=".55" stroke-width="2"/>
+      <rect width="282" height="39" rx="13" fill="#121b2d" fill-opacity=".88"/><path d="M0 39h282" stroke="#64748b" stroke-opacity=".36"/>
+      <circle cx="22" cy="20" r="4" fill="#60a5fa"/><text x="37" y="25" fill="#b6c2d9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700">projeto-garagem</text>
+      <g fill="#94a3b8" font-family="ui-monospace, monospace" font-size="13"><text x="24" y="72">⌄  src</text><text x="43" y="98">⌄  app</text><text x="61" y="124">page.tsx</text><text x="43" y="150">⌄  components</text><text x="61" y="176">ProjectsGrid.tsx</text><text x="43" y="202">lib</text><text x="24" y="228">public</text><text x="24" y="251">package.json</text></g>
+      <rect x="36" y="106" width="214" height="26" rx="5" fill="#27334c" fill-opacity=".72"/>
     </g>
-    <rect x="33" y="174" width="72" height="9" rx="4.5" fill="#38bdf8"/>
-    <rect x="116" y="174" width="46" height="9" rx="4.5" fill="#818cf8"/>
-    <rect x="173" y="174" width="68" height="9" rx="4.5" fill="#c084fc"/>
+
+    <g transform="translate(980 104) rotate(5 225 176)" filter="url(#shadow)">
+      <rect width="452" height="352" rx="16" fill="url(#editor-fill)" stroke="#60a5fa" stroke-opacity=".68" stroke-width="2"/>
+      <rect width="452" height="46" rx="16" fill="#111b2e"/><path d="M0 46h452" stroke="#64748b" stroke-opacity=".42"/>
+      <path d="M27 23l9-6m-9 6 9 6" fill="none" stroke="#93c5fd" stroke-width="2"/><text x="58" y="29" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="16">main.tsx</text>
+      <g font-family="ui-monospace, monospace" font-size="16"><g fill="#64748b"><text x="30" y="83">1</text><text x="30" y="116">2</text><text x="30" y="149">3</text><text x="30" y="201">4</text><text x="30" y="234">5</text><text x="30" y="267">6</text><text x="30" y="300">7</text></g><text x="66" y="83" fill="#e879f9">import <tspan fill="#67e8f9">&#123; Projects &#125;</tspan> from <tspan fill="#86efac">'@/components'</tspan>;</text><text x="66" y="116" fill="#e879f9">import <tspan fill="#67e8f9">&#123; useProjects &#125;</tspan> from <tspan fill="#86efac">'@/hooks'</tspan>;</text><text x="66" y="168" fill="#c4b5fd">export default function <tspan fill="#fbbf24">Home</tspan>() &#123;</text><text x="84" y="201" fill="#cbd5e1">const <tspan fill="#93c5fd">projects</tspan> = <tspan fill="#67e8f9">useProjects</tspan>();</text><text x="84" y="234" fill="#e879f9">return (</text><text x="102" y="267" fill="#94a3b8">&lt;<tspan fill="#67e8f9">ProjectsGrid</tspan> <tspan fill="#fbbf24">projects</tspan>=&#123;projects&#125; /&gt;</text><text x="84" y="300" fill="#e879f9">);</text></g>
+      <rect x="26" y="319" width="400" height="2" fill="#64748b" fill-opacity=".3"/>
+    </g>
+
+    <g transform="translate(1322 326) rotate(2 114 100)" filter="url(#shadow)">
+      <rect width="220" height="184" rx="14" fill="#0a0f1a" fill-opacity=".96" stroke="#a78bfa" stroke-opacity=".56" stroke-width="2"/>
+      <rect width="220" height="39" rx="14" fill="#11172a"/><path d="M0 39h220" stroke="#64748b" stroke-opacity=".36"/>
+      <text x="20" y="25" fill="#cbd5e1" font-family="ui-monospace, monospace" font-size="14">Terminal</text>
+      <g font-family="ui-monospace, monospace" font-size="13"><text x="18" y="67" fill="#cbd5e1">&gt; npm run dev</text><text x="18" y="98" fill="#86efac">✓ Starting...</text><text x="18" y="124" fill="#86efac">✓ Ready</text><text x="18" y="150" fill="#86efac">✓ Compiled successfully</text></g>
+    </g>
   </g>
-  <text x="975" y="409" fill="#c4b5fd" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="16" text-anchor="middle">frontend / backend / data / delivery</text>
-  <path d="M70 439h1060" stroke="url(#accent)" stroke-opacity=".72" stroke-width="2"/>
 </svg>
