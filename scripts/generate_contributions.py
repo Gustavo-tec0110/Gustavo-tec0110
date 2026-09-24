@@ -80,7 +80,7 @@ def render(days: dict[date, int], label: str, username: str) -> str:
     last_day = max(visible_days)
     first_week = week_start(first_day)
     weeks = ((last_day - first_week).days // 7) + 1
-    grid_x, grid_y, cell, gap = 178, 128, 13, 5
+    grid_x, grid_y, cell, gap = 188, 164, 17, 6
 
     month_labels: list[str] = []
     for day in sorted(visible_days):
@@ -88,8 +88,8 @@ def render(days: dict[date, int], label: str, username: str) -> str:
             continue
         column = (day - first_week).days // 7
         month_labels.append(
-            f'<text x="{grid_x + column * (cell + gap)}" y="106" fill="#94a3b8" '
-            f'font-family="Arial, Helvetica, sans-serif" font-size="14">{day.strftime("%b")}</text>'
+            f'<text x="{grid_x + column * (cell + gap)}" y="140" fill="#a5b4c7" '
+            f'font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600">{day.strftime("%b")}</text>'
         )
 
     cells: list[str] = []
@@ -121,33 +121,33 @@ def render(days: dict[date, int], label: str, username: str) -> str:
                     f'<rect x="{x}" y="{y}" width="{cell}" height="{cell}" rx="3" fill="{color}"><title>{day.isoformat()} · no public contributions</title></rect>'
                 )
 
-    legend_x = 112
+    legend_x = 132
     legend = "".join(
-        f'<rect x="{legend_x + level * 20}" y="316" width="13" height="13" rx="3" fill="{PALETTE[level]}"/>'
+        f'<rect x="{legend_x + level * 25}" y="395" width="17" height="17" rx="4" fill="{PALETTE[level]}"/>'
         for level in range(5)
     )
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="370" viewBox="0 0 1200 370" role="img" aria-labelledby="title desc">
+    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="1440" height="470" viewBox="0 0 1440 470" role="img" aria-labelledby="title desc">
   <title id="title">{html.escape(label)}</title>
   <desc id="desc">A custom graph of public GitHub contribution levels for {html.escape(username)}.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#090d18"/><stop offset="1" stop-color="#17112c"/></linearGradient>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#38bdf8"/><stop offset="1" stop-color="#a855f7"/></linearGradient>
   </defs>
-  <rect width="1200" height="370" rx="20" fill="url(#background)"/>
-  <rect x="24" y="24" width="1152" height="322" rx="14" fill="none" stroke="#64748b" stroke-opacity=".34"/>
-  <path d="M68 86h290" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
-  <text x="68" y="65" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="27" font-weight="700">Contribution activity</text>
-  <text x="1130" y="65" fill="#a5b4fc" font-family="ui-monospace, monospace" font-size="15" text-anchor="end">{html.escape(label)}</text>
+  <rect width="1440" height="470" rx="22" fill="url(#background)"/>
+  <rect x="28" y="28" width="1384" height="414" rx="16" fill="#090d18" fill-opacity=".32" stroke="#64748b" stroke-opacity=".42"/>
+  <path d="M76 100h332" stroke="url(#accent)" stroke-width="4" stroke-linecap="round"/>
+  <text x="76" y="75" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="700">Contribution activity</text>
+  <text x="1364" y="75" fill="#c4b5fd" font-family="ui-monospace, monospace" font-size="17" text-anchor="end">{html.escape(label)}</text>
   {''.join(month_labels)}
-  <text x="112" y="141" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="13">Sun</text>
-  <text x="112" y="177" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="13">Tue</text>
-  <text x="112" y="213" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="13">Thu</text>
-  <text x="112" y="249" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="13">Sat</text>
+  <text x="122" y="181" fill="#a5b4c7" font-family="Arial, Helvetica, sans-serif" font-size="14">Sun</text>
+  <text x="122" y="227" fill="#a5b4c7" font-family="Arial, Helvetica, sans-serif" font-size="14">Tue</text>
+  <text x="122" y="273" fill="#a5b4c7" font-family="Arial, Helvetica, sans-serif" font-size="14">Thu</text>
+  <text x="122" y="319" fill="#a5b4c7" font-family="Arial, Helvetica, sans-serif" font-size="14">Sat</text>
   {''.join(cells)}
-  <text x="68" y="327" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14">Less</text>
+  <text x="76" y="408" fill="#a5b4c7" font-family="Arial, Helvetica, sans-serif" font-size="15">Less</text>
   {legend}
-  <text x="{legend_x + 112}" y="327" fill="#94a3b8" font-family="Arial, Helvetica, sans-serif" font-size="14">More</text>
-  <text x="1130" y="327" fill="#94a3b8" font-family="ui-monospace, monospace" font-size="13" text-anchor="end">source: github.com/{html.escape(username)}</text>
+  <text x="{legend_x + 138}" y="408" fill="#a5b4c7" font-family="Arial, Helvetica, sans-serif" font-size="15">More</text>
+  <text x="1364" y="408" fill="#a5b4c7" font-family="ui-monospace, monospace" font-size="14" text-anchor="end">source: github.com/{html.escape(username)}</text>
 </svg>'''
 
 
