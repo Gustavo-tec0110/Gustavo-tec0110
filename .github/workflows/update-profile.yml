@@ -1,0 +1,30 @@
+name: Update profile assets
+
+on:
+  schedule:
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-contribution-graph:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Generate contribution graph
+        run: python scripts/generate_contributions.py
+      - name: Commit refreshed asset
+        run: |
+          if git diff --quiet -- assets/profile/contributions.svg; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/profile/contributions.svg
+          git commit -m "chore: update contribution graph"
+          git push
